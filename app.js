@@ -171,3 +171,5 @@ function type(d) {
   d.stellar_radius = +d.stellar_radius;
   return d;
 }
+
+// Inspired by Mike Bostock's and Jonathan Corum's Kepler's Tally.
