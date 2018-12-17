@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Gregory King">
+    <title>State of JS Galactic Edition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/d3-tip.css" />
+    <svg style="position:absolute;width:0;height:0;"></svg>
+    <script src="/js/d3.v3.min.js"></script>
+    <script src="/js/d3-tip.js"></script>
+  </head>
+  <header>
+    <h1>State of JS: Galactic Edition</h1>
+    <div class="explanation">
+      <p>
+        In my poor attempt to mimic the design ambiance of the State of JS 2018, in
+        this alternative world, web technologies are represented by planets
+        rotating around a main theme (<span>Front-End, Back-End, Data, Flavor, Testing</span>). 
+        <ul>
+          <li>The <span>size</span> of the planet
+            represents the total number of users</li>
+          <li>The <span>period/speed</span> of the planet represents the amount of interest in the technology</li>
+          <li>For perspective, the <span>orbits</span> represent the initial release of the technology (or at least my best estimate of it)</li>
+        </ul>
+      </p>
+    </div>
+    <div class = "explanation">
+        <h3>Insights</h3>
+        <ul>
+          <li>For <span>Front-End Frameworks</span>, we can see that there is a slight correlation between interest and newness. We can see that although <span>React</span> has a large user base and steady interest, <span>Vue</span> is gaining steam quite rapidly.</li>
+          <li>The situation in <span>Back-End Frameworks</span> is quite unique. Although, <span>Express</span> is already 8 years old, it still garners a lot of interest from developers.</li>
+          <li>For some reason most of the tech in the <span>Data Layer</span> section more or less started around the same time; fierce competition?</li>
+          <li>For newer developers aiming to become <span>full stack developers</span>, the size of the planets may serve as a useful guide. Bigger planets (more users) can indicate that the technology is mature and that resources are available. <span>[React, Express, Redux, ES6, TypeScript, Jest]</span> (don't know if that combination makes sense...)</li>
+          <li>For people who want to get ahead of the trend, you might want to look at the planets with the most momentum. <span>[Vue, Next.js, GraphQL, TypeScript, Jest]</span></li>
+        </ul>
+    </div>
+  </header>
+  <body>
+    <script src="app.js"></script>
+  </body>
+</html>

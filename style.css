@@ -1,0 +1,115 @@
+body {
+  background: #212323;
+  position: relative;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+}
+
+h1 {
+  color: white;
+  max-width: 80%;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.explanation {
+  color: #72d7d1;
+  max-width: 90%;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.explanation span {
+  color: #fe6a6a;
+}
+
+.system {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.system-label {
+  stroke: #fe6a6a;
+}
+
+.orbit {
+  fill: none;
+  stroke: #72d7d1;
+  stroke-dasharray: 0.6, 10;
+}
+
+.planet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-animation-name: rotate;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-name: rotate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 0.85;
+}
+
+.planet-year {
+  position: absolute;
+  fill: rgba(114, 215, 209, 0.7);
+  font-size: 14px;
+  top: 0;
+  left: 0;
+}
+
+.planet-text {
+  fill: white;
+  font-weight: 300;
+  position: absolute;
+}
+
+/* .planet circle {
+  fill: url(#planet-gradient);
+} */
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotateZ(0deg);
+  }
+  to {
+    -moz-transform: rotateZ(-360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
